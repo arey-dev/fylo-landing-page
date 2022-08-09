@@ -1,0 +1,65 @@
+:root {
+  /* colors */
+  --clr-primary-light: hsl(238, 22%, 44%);
+  --clr-primary-dark: hsl(243, 87%, 12%);
+  --clr-accent-light: hsl(224, 93%, 58%);
+  --clr-accent-dark: hsl(170, 45%, 43%);
+  --clr-neutral-light: hsl(240, 75%, 98%);
+  --clr-neutral-dark: hsl(0, 0%, 75%);
+
+  /* font family */
+  --ff-primary: 'Raleway', sans-serif;
+  --ff-secondary: 'Open Sans', sans-serif;
+  
+  --ff-heading: var(--ff-primary);
+  --ff-cta: var(--ff-primary);
+  --ff-body: var(--ff-secondary);
+  
+  /* font size */
+  --fs-800: 3rem;
+  --fs-700: 2.5rem;
+  --fs-600: 2rem;
+  --fs-500: 1.25rem;
+  --fs-400: 1.125rem;
+  --fs-300: 1rem;
+  --fs-200: 0.875rem;
+  --fs-100: 0.75rem;
+
+  --fs-heading-primary: var(--fs-800);
+  --fs-heading-seconday: var(--fs-700);
+  --fs-heading-tertiary: var(--fs-600)
+  --fs-body: var(--fs-400);
+
+  /* font weight */
+  --fw-bold: 700;
+  --fw-regular: 400;
+
+}
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  color: var(--clr-primary-light);
+}
+
+/* .container {
+  --max-width: 1200px;
+  --padding-inline: 1rem;
+  --padding-block: 3rem;
+
+  width: min(var(--max-width), calc(100% - var(--padding-inline)));
+  padding-block: var(--padding-block);
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+} */
