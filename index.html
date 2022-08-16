@@ -27,9 +27,9 @@
       <img src="./images/logo.svg" alt="Fylo">
       <nav>
         <ul class="flex">
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Sign In</a></li>
+          <li><a href="#" class="link">Features</a></li>
+          <li><a href="#" class="link">Team</a></li>
+          <li><a href="#" class="link">Sign In</a></li>
         </ul>
       </nav>
     </div>
@@ -37,14 +37,17 @@
   <main>
     <section id="hero">
       <div class="container grid">
-        <div class="cta cta--header">
-          <h1 class="cta__heading cta__heading--blue">
+        <div class="cta cta--blue">
+          <h1 class="cta__heading | txt-bold mb-400">
             All your files in one secure location, accessible anywhere.
           </h1>
-          <p class="cta__subheading cta__subheading--blue">
+          <p class="cta__subheading | mb-500">
             Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
           </p>
-          <!-- input and button -->
+          <form class="cta__form | flex" action="#">
+            <input class="cta__form__input" type="email" name="email" placeholder="Enter your email...">
+            <input class="cta__form__button | button txt-bold" type="submit" value="Get Started">
+          </form>
         </div>
         <img src="./images/illustration-1.svg" alt="">
       </div>
