@@ -1,23 +1,26 @@
+/** link to all box shadow styles used
+* https: //getcssscan.com/css-box-shadow-examples 
+*/
+
 :root {
   /* colors */
   --clr-primary-light: hsl(238, 22%, 44%);
   --clr-primary-dark: hsl(243, 87%, 12%);
   --clr-accent-light: hsl(224, 93%, 58%);
   --clr-accent-dark: hsl(170, 45%, 43%);
-  --clr-neutral-light: hsl(240, 75%, 98%);
+  --clr-neutral-light: hsl(240, 80%, 98%);
   --clr-neutral-dark: hsl(0, 0%, 75%);
 
   /* font family */
   --ff-primary: 'Raleway', sans-serif;
   --ff-secondary: 'Open Sans', sans-serif;
   
-  --ff-heading: var(--ff-primary);
-  --ff-cta: var(--ff-primary);
+  --ff-main: var(--ff-primary);
   --ff-body: var(--ff-secondary);
   
   /* font size */
-  --fs-800: 3rem;
-  --fs-700: 2.5rem;
+  --fs-800: 2.5rem;
+  --fs-700: 2.25rem;
   --fs-600: 2rem;
   --fs-500: 1.25rem;
   --fs-400: 1.125rem;
@@ -43,14 +46,6 @@
   --size-400: 1rem;  
 }
 
-@media only screen and (min-width: 50em) {
-  .grid {
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-  }
-}
-
-
 body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
@@ -70,6 +65,7 @@ body {
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
@@ -93,14 +89,17 @@ body {
   padding-block: 0.9375rem;
   line-height: 1;
 
-  /* https: //getcssscan.com/css-box-shadow-examples */
-  box-shadow: rgba(0, 0, 0, 0.15) 0.125em 0.125em 2.6px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0.125em 0.125em 2.6px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0.125em 0.125em 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0.2em 0.2em 2.6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0.2em 0.2em 2.6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.15) 0.2em 0.2em 2.6px;
 }
 
 .txt-bold {
   font-weight: var(--fw-bold);
+}
+
+.ff-main {
+  font-family: var(--ff-main);
 }
 
 .mb-400 {
@@ -125,4 +124,18 @@ body {
 
 .mb-800 {
   margin-bottom: var(--size-900);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  -webkit-clip-path: inset(50%) !important;
+  height: 1px !important;
+  width: 1px !important;
+  position: absolute !important;
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  padding: 0 !important;
+  margin: -1px !important;
 }
