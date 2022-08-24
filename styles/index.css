@@ -40,6 +40,7 @@ header nav .flex {
   max-width: 12rem;
   background-color: var(--clr-accent-light);
   color: white;
+  transition: filter 0.3s ease-out;
 }
 
 /* BACKGROUND */
@@ -218,6 +219,12 @@ nav[aria-label="footer"] .grid {
   gap: 1rem min(5vw, 5rem);
 }
 
+/* transition effects for footer links */
+nav[aria-label="footer"] ul .link,
+.social-link-container a {
+  transition: color 0.3s ease-out;
+}
+
 nav[aria-label="footer"] .social-link.flex {
   place-self: start;
 }
@@ -230,6 +237,7 @@ nav[aria-label="footer"] .social-link.flex {
   border: 1px solid var(--clr-neutral-light);
   border-radius: 50%;
   cursor: pointer;
+  transition: border-color 0.15s ease-out;
 }
 
 /* HOVER STYLES ON FOOTER LINKS */
