@@ -43,12 +43,35 @@
   --size-600: 1.5rem;
   --size-500: 1.25rem;
   --size-400: 1rem;  
+  --size-300: 0.626rem;
+  --size-200: 0.5rem
 }
 
 @media only screen and (max-width: 68.75em) {
   :root {
     --fs-heading-primary: var(--fs-600);
     --fs-body: var(--fs-300);
+  }
+}
+
+@media only screen and (max-width: 41em) {
+  :root {
+    --fs-heading-primary: var(--fs-500);
+  }
+}
+
+@media only screen and (max-width: 26.625em) {
+  :root {
+    --fs-heading-secondary: var(--fs-500);
+    --fs-body: var(--fs-200);
+  }
+}
+
+@media only screen and (max-width: 21.875em) {
+  :root {
+    --fs-heading-primary: var(--fs-400);
+    --fs-heading-secondary: var(--fs-400);
+    --fs-body: var(--fs-200);
   }
 }
 

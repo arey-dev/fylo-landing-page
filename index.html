@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./styles/reset.css" type="text/css">
   <link rel="stylesheet" href="./styles/base.css" type="text/css">
   <link rel="stylesheet" href="./styles/index.css" type="text/css">
+  <link rel="stylesheet" href="./styles/media.css" type="text/css">
 
   <!-- font family -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +26,6 @@
   <header>
     <div class="container grid">
       <div class="logo">
-        <!-- wrap in anchor tag -->
         <img src="./images/logo.svg" alt="Logo of Fylo" loading="lazy">
       </div>
       <nav class="ff-main" aria-label="main">
@@ -127,11 +127,11 @@
         </svg>
       </div>
       <nav class="grid" aria-label="footer">
-        <address>
-          <span id="phone" class="mb-400">
+        <address class="address flex"> 
+          <span id="phone">
             Phone: +1-543-123-4567
           </span>
-          <span id="email" class="mb-400">
+          <span id="email">
             example@fylo.com
           </span>
         </address>
@@ -144,7 +144,7 @@
           <li><a href="#" class="link">Terms</a></li>
           <li><a href="#" class="link">Privacy</a></li>
         </ul>
-        <div class="flex">
+        <div class="social-link flex">
           <span class="sr-only">Social Media Links</span>
           <div class="social-link-container">
             <a href="#" class="link" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>

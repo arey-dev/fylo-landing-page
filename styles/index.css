@@ -1,10 +1,12 @@
 /* HEADER */
 header nav {
-  place-self: center end;
+  width: 100%;
+  place-self: center;
 }
 
 header nav .flex {
   gap: 2.875rem;
+  justify-content: flex-end;
 }
 
 /* HERO */
@@ -74,8 +76,6 @@ header nav .flex {
   padding-top: 2rem;
 }
 
-
-
 .link-container {
   display: inline-block;
   font-size: var(--fs-300);
@@ -95,7 +95,8 @@ header nav .flex {
 }
 
 .testimonial {
-  width: 22rem;
+  max-width: 22rem;
+  width: 100%;
   background-color: #FFF;
   border-radius: 0.375rem;
   padding: 1rem 1.75rem;
@@ -190,8 +191,9 @@ nav[aria-label="footer"] {
 
 }
 
-address span {
-  display: block;
+nav[aria-label="footer"] .address.flex {
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 #phone::before,
@@ -214,7 +216,7 @@ nav[aria-label="footer"] .grid {
   gap: 1rem min(5vw, 5rem);
 }
 
-nav[aria-label="footer"] .flex {
+nav[aria-label="footer"] .social-link.flex {
   place-self: start;
 }
 
@@ -246,68 +248,4 @@ nav[aria-label="footer"] ul .link:active {
 .social-link-container a:active {
   color: var(--clr-accent-light);
   border-color: var(--clr-accent-light);
-}
-
-/* MEDIA QUERIES */
-@media only screen and (max-width: 60.5em) {
-  /* increase inline padding #hero, #testomonial-section */
-  section:not(#cta-section) .container {
-    --padding-inline: 4rem;
-  }
-
-  /* chagine grid layout for #hero, #testimonial-section */
-  section:not(#cta-section) .container.grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  /* change the order of 1st grid item of #hero, #testimonial-section */
-  section:not(#cta-section) .container.grid > div {
-    order: 2;
-  }
-
-  /* change the order of 2nd grid item of #hero, #testimonial-section */
-  section .container.grid > img,
-  #testimonial-section .container > img {
-    place-self: center;
-    width: 50%;
-    padding-top: 0;
-    order: 1;
-  }
-
-  /* HERO SECTION */
-  .cta--blue .cta__subheading {
-    margin-bottom: var(--size-700);
-  }
-
-  .cta--blue .cta__form {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  /* BACKGROUND */
-  .background {
-    padding-block: 4rem;
-  }
-
-  /* TESTIMONIAL */
-
-  #testimonial-section .container > div {
-    padding-top: 3rem;
-  }
-
-  #testimonial-section .container > div > p {
-    width: 100%;
-  }
-
-  /* CTA */
-
-  #cta-section .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .cta--white .cta__subheading {
-    font-size: calc(var(--fs-200) + 1px);
-  }
-
 }
