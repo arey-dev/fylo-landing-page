@@ -64,6 +64,7 @@ header nav .flex {
 
 #testimonial-section .grid {
   grid-template-columns: 55% 45%;
+  gap: 0;
 }
 
 #testimonial-section h2 {
@@ -145,6 +146,7 @@ header nav .flex {
 
 #cta-section .grid {
   grid-template-columns: 55% 45%;
+  gap: 0;
 }
 
 #cta-section .container {
