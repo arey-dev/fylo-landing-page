@@ -46,8 +46,7 @@ header nav .flex {
 /* BACKGROUND */
 .background {
   background: url('../images/bg-curve-desktop.svg') no-repeat bottom/contain;
-  /* max-width: 1400px;
-  width: 100%; */
+  width: min(100%, 1400px);
   padding-block: 6rem;
   margin-inline: auto;
 }
