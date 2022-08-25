@@ -48,11 +48,12 @@
             Fylo stores your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, and co-workers.
           </p>
           <form class="cta__form | flex ff-main" action="#">
-            <input class="cta__form__input" type="email" name="email" placeholder="Enter your email...">
+            <label for="cta__email" class="sr-only">Enter your email</label>
+            <input id="cta__email" class="cta__form__input" type="email" name="email" placeholder="Enter your email...">
             <input class="cta__form__button | button txt-bold" type="submit" value="Get Started">
           </form>
         </div>
-        <img src="./images/illustration-1.svg" alt="" loading="lazy">
+        <img src="./images/illustration-1.svg" alt="" aria-hidden="true" loading="lazy">
       </div>
     </section>
     <div class="background">
@@ -72,19 +73,23 @@
             <a href="#" class="link"> See how Fylo works</a>
           </div>
           <article class="testimonial">
+            <h2 class="sr-only">Client Testimonial</h2>
             <p class="testimonial__text | mb-400">
               Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.
             </p>
-            <div class="testimonial__profile | flex">
-              <img src="./images/avatar-testimonial.jpg" alt="Kyle Burton's image" loading="lazy" class="avatar">
+            <section class="testimonial__profile | flex">
+              <h3 class="sr-only">Client Info</h3>
+              <img src="./images/avatar-testimonial.jpg" alt="Author's image" loading="lazy" class="avatar">
               <div class="flex">
+                <span class="sr-only">Client's name</span>
                 <span class="name | ff-main txt-bold">Kyle Burton</span>
+                <span class="sr-only">Client's title</span>
                 <span class="title">Founder & CEO, Huddle</span>
               </div>
-            </div>
+            </section>
           </article>
         </div>
-        <img src="./images/illustration-2.svg" alt="" loading="lazy">
+        <img src="./images/illustration-2.svg" alt="" aria-hidden="true" loading="lazy">
       </div>
     </section>
     <section id="cta-section">
@@ -97,8 +102,9 @@
             It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.
           </p>
         </div>
-        <form class="cta__form cta__form--white | flex ff-main" action="#" >
-          <input class="cta__form__input" type="email" name="email" placeholder="email@example.com">
+        <form class="cta__form cta__form--white | flex ff-main" action="#">
+          <label for="ctaw__email" class="sr-only">Enter your email</label>
+          <input id="ctaw__email" class="cta__form__input" type="email" name="email" placeholder="email@example.com">
           <input class="cta__form__button | button txt-bold" type="submit" value="Get Started For Free">
         </form>
       </div>
@@ -128,10 +134,10 @@
       </div>
       <nav class="grid" aria-label="footer">
         <address class="address flex"> 
-          <span id="phone">
+          <a id="phone" href="#" class="link">
             Phone: +1-543-123-4567
-          </span>
-          <span id="email">
+          </a>
+          <span id="email" href="#" class="link">
             example@fylo.com
           </span>
         </address>
@@ -144,18 +150,17 @@
           <li><a href="#" class="link">Terms</a></li>
           <li><a href="#" class="link">Privacy</a></li>
         </ul>
-        <div class="social-link flex">
-          <span class="sr-only">Social Media Links</span>
-          <div class="social-link-container">
-            <a href="#" class="link" aria-label="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          </div>
-          <div class="social-link-container">
-            <a href="#" class="link" aria-label="twitter"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-          <div class="social-link-container">
-            <a href="#" class="link" aria-label="instagram"><i class="fa-brands fa-instagram"></i></a>
-          </div>
-        </div>
+        <ul class="social-link flex" aria-label="Social Media Links">
+          <li class="social-link-container">
+            <a href="#" class="link" aria-label="facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
+          </li>
+          <li class="social-link-container">
+            <a href="#" class="link" aria-label="twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li class="social-link-container">
+            <a href="#" class="link" aria-label="instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+          </li>
+        </li>
       </nav>
     </div>
   </footer>
