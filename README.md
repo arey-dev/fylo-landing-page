@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./design/project_ss_fylo_landing_page_2.png.png)
+![](./design/project_ss_fylo_landing_page_2.png)
 
 ### Links
 
